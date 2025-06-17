@@ -17,7 +17,7 @@ O Ilê atua com seriedade, ética e compromisso com a ancestralidade, oferecendo
 ## 🌍 Site
 
 Acesse o site publicado via GitHub Pages:  
-👉 [https://williamifa.github.io/ile-ase-baba-ifa](https://williamifa.github.io/ile-ase-baba-ifa)
+👉 [https://williamifa.github.io/ile-ase-baba-ifa](https://williamifa.github.io/ile-ase-baba-ifa/)
 
 ## 📞 Contato
 
