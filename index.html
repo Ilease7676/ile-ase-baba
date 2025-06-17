@@ -1,21 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consulta de búzios com seriedade e tradição em Santos. Agende agora.">
-  <title>Jogo de Búzios em Santos | Ilê Asé Babá Ifá Damilare</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ilê Asé Babá Ifá Damilare</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffaf0;
+      color: #5b3a00;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    header {
+      background-color: #a9742a;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    main {
+      padding: 20px;
+      flex-grow: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #5b3a00;
+      border-bottom: 2px solid #a9742a;
+      padding-bottom: 5px;
+    }
+    /* FAQ acordeão */
+    .faq-item {
+      margin-bottom: 10px;
+      border: 1px solid #a9742a;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .faq-question {
+      background-color: #f2e6b8;
+      padding: 15px;
+      cursor: pointer;
+      font-weight: 600;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    .faq-question:hover {
+      background-color: #d7c06b;
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 15px;
+      background-color: #fff9db;
+      transition: max-height 0.4s ease;
+    }
+    .faq-answer p {
+      padding: 10px 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px; /* ajuste conforme o conteúdo */
+    }
+    /* Botões flutuantes */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+    .floating-button {
+      background-color: #a9742a;
+      color: white;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      font-size: 26px;
+    }
+    .floating-button:hover {
+      background-color: #84691a;
+    }
+    footer {
+      background-color: #a9742a;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      box-shadow: 0 -2px 4px rgb(0 0 0 / 0.1);
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Ilê Asé Babá Ifá Damilare</h1>
-    <p>Jogo de Búzios com seriedade em Santos/SP</p>
-  </header>
+
+<header>
+  <img src="https://i.imgur.com/Za3WLG0.png" alt="Logo Ilê Asé Babá Ifá Damilare" />
+  <h1>Ilê Asé Babá Ifá Damilare</h1>
+</header>
+
+<main>
   <section>
-    <h2>Agende sua Consulta</h2>
-    <p>Realizamos <strong>jogo de búzios em Santos</strong>, no bairro Campo Grande, com ética e respeito à tradição Yorubá.</p>
-    <a class="button" href="https://wa.me/5511994880318" target="_blank">Fale pelo WhatsApp</a>
+    <h2>Bem-vindo ao Ilê Asé Babá Ifá Damilare</h2>
+    <p>
+      Respeito, tradição e fé no culto a Ifá.  
+      Consulte nossos serviços e entre em contato para agendamento.
+    </p>
   </section>
+
+  <section>
+    <h2>FAQ - Perguntas Frequentes</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Como agendar uma consulta de búzios?</div>
+      <div class="faq-answer">
+        <p>Você pode entrar em contato via WhatsApp ou telefone para marcar o melhor horário.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Quais os horários de atendimento?</div>
+      <div class="faq-answer">
+        <p>Atendemos de segunda a sábado, das 9h às 18h.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Onde fica o Ilê?</div>
+      <div class="faq-answer">
+        <p>Estamos localizados em Santos, no bairro Campo Grande.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Botões flutuantes -->
+<div class="floating-buttons">
+  <a
+    href="https://wa.me/5511949880318"
+    target="_blank"
+    class="floating-button"
+    aria-label="WhatsApp"
+    title="WhatsApp"
+  >
+    📱
+  </a>
+  <a href="tel:+5511949880318" class="floating-button" aria-label="Telefone" title="Telefone">📞</a>
+</div>
+
+<footer>
+  &copy; 2025 Ilê Asé Babá Ifá Damilare - Contato: (11) 94988-0318
+</footer>
+
+<script>
+  // Script para o acordeão FAQ
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const parent = item.parentElement;
+      parent.classList.toggle('active');
+    });
+  });
+</script>
+
 </body>
 </html>
